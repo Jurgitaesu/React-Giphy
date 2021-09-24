@@ -21,6 +21,11 @@ body {
     object-fit: cover;
 }
 
+h2{
+    text-align: center;
+    margin: 40px auto;
+}
+
 /*******************  Input ********************/
 
 .inputHolder {

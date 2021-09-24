@@ -74,6 +74,7 @@ function App() {
 
     return (
         <div className="container">
+            <h2>Search for gifs from Giphy API</h2>
             <Input keywordRef={keywordRef} handleSearch={handleSearch}/>
             {isLoading ? <Loader/> : null}
             {!!error && <div className="error">{error}</div>}
