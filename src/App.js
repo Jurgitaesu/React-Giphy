@@ -25,7 +25,7 @@ function App() {
           let fetchedGifs = [];
           fetchedGifs = data.data;
           if (fetchedGifs.length === 0) {
-            return setError('No more gifs to show, try another keyword');
+            return setError('No gifs to show, try another keyword');
           }
           setError('');
           setGifs([...gifs, ...fetchedGifs]);
