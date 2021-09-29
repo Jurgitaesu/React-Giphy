@@ -37,7 +37,7 @@ function App() {
       fetchGifs();
     }
     setIsLoading(false);
-  }, [isLoading]);
+  }, [isLoading]); // eslint-disable-line react-hooks/exhaustive-deps
 
   const handleSearch = () => {
     setGifs([]);
