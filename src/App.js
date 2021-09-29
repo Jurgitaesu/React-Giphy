@@ -22,7 +22,8 @@ function App() {
             `https://api.giphy.com/v1/gifs/search?api_key=${API_KEY}&q=${keyword}&limit=12&offset=${offset}`
           );
           const data = await response.json();
-          const fetchedGifs = data.data;
+          let fetchedGifs = [];
+          fetchedGifs = data.data;
           if (fetchedGifs.length === 0) {
             return setError('No more gifs to show, try another keyword');
           }
